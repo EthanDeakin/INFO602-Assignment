@@ -5,9 +5,9 @@
         <div class="flex items-center">
           <img
             v-if="showLogo"
-            src="/path/to/zumba-tech-logo.png"
+            src="https://1000logos.net/wp-content/uploads/2021/03/Zumba-Fitness-logo-500x300.png"
             alt="Zumba Tech Logo"
-            class="h-8 w-auto"
+            class="h-16 w-auto absolute"
           />
         </div>
   
@@ -93,6 +93,7 @@
         </div>
       </div>
     </nav>
+    <router-view></router-view>
   </template>
   
   <script>

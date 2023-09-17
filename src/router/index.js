@@ -76,40 +76,45 @@ const routes = [
     ],
   },
   {
-    path: '/app',
+    path: '/app/instructor',
     component: AppNav,
-    meta: { requiresAuth: true }, // This route requires authentication
     children: [
       {
-        path: 'instructor/dashboard',
+        path: 'dashboard',
         name: 'InstructorDashboard',
         component: InstructorDashboard,
       },
       {
-        path: 'instructor/manage-attendance',
+        path: 'manage-attendance',
         name: 'ManageAttendance',
         component: ManageAttendance,
       },
       {
-        path: 'instructor/manage-class',
+        path: 'manage-class',
         name: 'ManageClass',
         component: ManageClass,
       },
       {
-        path: 'instructor/manage-members',
+        path: 'manage-members',
         name: 'ManageMembers',
         component: ManageMembers,
       },
       {
-        path: 'instructor/record-attendance',
+        path: 'record-attendance',
         name: 'RecordAttendance',
         component: RecordAttendance,
       },
+    ],
+  },
+  {
+    path: '/app/member',
+    component: AppNav,
+    children: [
       {
-        path: 'member/dashboard',
+        path: 'dashboard',
         name: 'MemberDashboard',
         component: MemberDashboard,
-      }
+      },
     ],
   },
 ];
