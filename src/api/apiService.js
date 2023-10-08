@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:3000'; // Replace with your Node.js server URL
+const API_URL = 'http://localhost:3000';
 
 export default {
   // Login user
